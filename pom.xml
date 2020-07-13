@@ -12,6 +12,7 @@
 	<artifactId>jokeapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jokeapp</name>
+	<packaging>jar</packaging>
 	<description>building a web joke application use spring boot</description>
 
 	<properties>
@@ -28,11 +29,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/guru.springframework/chuck-norris-for-actuator -->
+		<dependency>
+		    <groupId>guru.springframework</groupId>
+		    <artifactId>chuck-norris-for-actuator</artifactId>
+		    <version>0.0.2</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
