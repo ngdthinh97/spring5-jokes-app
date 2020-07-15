@@ -9,11 +9,10 @@ public class JokeServiceImpl implements JokeService{
 	
 	private final ChuckNorrisQuotes chuckNorrisquotes;
 	
-	public JokeServiceImpl() {
-		// TODO Auto-generated constructor stub
-		this.chuckNorrisquotes = new ChuckNorrisQuotes();
+	public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisquotes) {
+		this.chuckNorrisquotes = chuckNorrisquotes;
 	}
-	
+
 	@Override
 	public String getJoke() {
 		// TODO Auto-generated method stub
